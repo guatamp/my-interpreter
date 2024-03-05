@@ -12,7 +12,7 @@ class Parser {
         this.tokens = tokens;
     }
 
-    Expr Parse(){
+    Expr parse(){
         try{
             return expression();
         } catch(ParseError error) {
@@ -152,10 +152,10 @@ class Parser {
     }
 
     private Token peek(){
-        return tokens.get(current - 1);
+        return tokens.get(current);
     }
 
     private Token previous(){
-        return tokens.get(current);
+        return tokens.get(current - 1);
     }
 }
