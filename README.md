@@ -11,3 +11,7 @@ Currently the interpreter can:
   -> Evaluate print statements
 
   -> Allow user to declare and intialize variables
+
+  -> Evaluate for, if and while statements
+
+  -> Allow use to declare and call functions
